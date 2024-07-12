@@ -1,0 +1,74 @@
+.card-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.footer-links ul {
+  padding: 0;
+}
+
+.footer-links ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 40px 0;
+}
+
+footer h5 {
+  color: #ffc107;
+}
+
+.navbar-brand {
+  color: #ffc107 !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(255, 193, 7, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 193, 7, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: 213px;
+  object-fit: cover;
+}
+
+.card h5 {
+  margin-bottom: 10px;
+}
+
+.card-description {
+  flex-grow: 1;
+}
+
+.btn-primary {
+  margin-top: auto;
+}
