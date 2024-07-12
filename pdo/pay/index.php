@@ -15,7 +15,7 @@ if ($conn) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/5c5946fe44.js" crossorigin="anonymous"></script>
     <title>Trang Thanh Toán</title>
   </head>
@@ -38,11 +38,11 @@ if ($conn) {
         <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 mb-4">
           <div class="card h-100">
             <img height="213px" class="card-img-top" src="images/<?php echo $product['image']; ?>" alt="Hình Ảnh Sản Phẩm">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="d-inline"><b><?php echo $product['title']; ?></b></h5>
               <h5 class="d-inline"><div class="text-muted d-inline">($<?php echo $product['price']; ?>/sản phẩm)</div></h5>
               <p class="card-description"><?php echo $product['description']; ?></p> 
-              <a href="#" class="btn btn-primary w-100 rounded my-2">Thanh Toán Ngay <i class="fas fa-arrow-right"></i></a>
+              <a href="pay.php?product_id=<?php echo $product['id']; ?>&product_title=<?php echo urlencode($product['title']); ?>&product_price=<?php echo $product['price']; ?>" class="btn btn-primary w-100 rounded mt-auto">Thanh Toán Ngay <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
