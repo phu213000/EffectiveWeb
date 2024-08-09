@@ -35,7 +35,7 @@ try {
                 <i class="fas fa-question-circle"></i> Ask Question
             </a>
             <div class="bg-white mb-3">
-                <h4 class="px-3 py-4 op-5 m-0">Latest Posts</h4>
+                <h4 class="px-3 py-4 op-5 m-0"><a href="./index.php">Latest Posts</a></h4>
                 <?php foreach ($allPosts as $post): ?>
                 <hr class="m-0" />
                 <div class="pos-relative px-3 py-3">
