@@ -1,0 +1,23 @@
+# Bật chế độ RewriteEngine để sử dụng mod_rewrite
+RewriteEngine On
+
+# Điều hướng tất cả các truy cập đến file index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Chặn truy cập trực tiếp vào các thư mục hoặc file trong static
+<FilesMatch "\.(php)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Cho phép truy cập vào các file cụ thể
+<Files "index.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "manage.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
